@@ -19,11 +19,37 @@
   --c12: #000000;
 }
 
+.c5 {
+  color: var(--c5);
+}
+
+.p1 {
+  color: var(--p1);
+}
+
+.font-1-m-b {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+
+.font-1-xxl {
+  font-size: 4rem;
+  line-height: 4.5rem;
+  font-weight: 600;
+}
+
+.font-2-l {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-weight: 400;
+}
+
 body {
   background: var(--c12);
   margin: 0 auto;
   color: var(--w);
-  font-family: "Poppins", sans-serif;
+  font-family: "roboto", sans-serif;
 }
 
 h1,
@@ -45,12 +71,12 @@ nav div {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding: 32px 0px;
+  padding: 2rem 0rem;
 }
 
 nav div ul {
   display: flex;
-  gap: 40px;
+  gap: 2.5rem;
   align-items: center;
 }
 
@@ -59,14 +85,30 @@ a {
   color: var(--w);
 }
 
-.font-1-m-b {
-  font-size: 1.125rem;
-  line-height: 1.5rem;
-  font-weight: 600;
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.col-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid {
+  display: grid;
 }
 
 .primary-button {
-  padding: 16px 32px;
-  border-radius: 5px;
-  background-color: var(--p1);
+  display: block;
+  padding: 1rem 2rem;
+  border-radius: 0.3125rem;
+  background-image: linear-gradient(var(--p1), var(--p2));
+  box-shadow: 0rem 0.0625rem 0.125rem var(--c12);
+  text-transform: uppercase;
+  color: var(--p5);
 }
